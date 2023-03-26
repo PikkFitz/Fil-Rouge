@@ -8,7 +8,6 @@ USE BDD_VillageGreen;
 
 CREATE TABLE Fournisseur(
    fournisseur_id INT AUTO_INCREMENT,
-   fournisseur_num VARCHAR(255) UNIQUE NOT NULL,
    fournisseur_nom VARCHAR(255)  NOT NULL,
    fournisseur_adresse VARCHAR(255)  NOT NULL,
    fournisseur_ville VARCHAR(255)  NOT NULL,
@@ -18,20 +17,21 @@ CREATE TABLE Fournisseur(
    PRIMARY KEY(fournisseur_id)
 );
 
+
 -- TABLE COMMANDE ----------------------------------------------------------------------------------------------
 
 CREATE TABLE Commande(
    commande_id INT AUTO_INCREMENT,
-   commande_num VARCHAR(255) UNIQUE NOT NULL,
    commande_observation VARCHAR(255) ,
    commande_date DATETIME NOT NULL DEFAULT current_timestamp(),
    commande_datePaiement DATETIME NOT NULL,
    commande_facture BOOLEAN DEFAULT 0,
-   commande_infoPaiement VARCHAR(255) NOT NULL,
+   commande_infoPaiement VARCHAR(255)  NOT NULL,
    commande_documents TEXT NOT NULL,
-   commande_reduction DECIMAL(15,2) NOT NULL DEFAULT 0,
+   commande_reduction DECIMAL(15,2)   NOT NULL DEFAULT 0,
    PRIMARY KEY(commande_id)
 );
+
 
 -- TABLE SERVICE ----------------------------------------------------------------------------------------------
 
@@ -41,6 +41,7 @@ CREATE TABLE Service(
    PRIMARY KEY(service_id)
 );
 
+
 -- TABLE STATUT ----------------------------------------------------------------------------------------------
 
 CREATE TABLE Statut(
@@ -48,6 +49,7 @@ CREATE TABLE Statut(
    statut_nom VARCHAR(255)  NOT NULL,
    PRIMARY KEY(statut_id)
 );
+
 
 -- TABLE CATEGORIE ----------------------------------------------------------------------------------------------
 
@@ -71,31 +73,19 @@ CREATE TABLE SousCategorie(
 
 CREATE TABLE Produit(
    produit_id INT AUTO_INCREMENT,
-   produit_referenceFournisseur VARCHAR(255) UNIQUE NOT NULL,
-   produit_description TEXT,
+   produit_referenceFournisseur VARCHAR(255)  NOT NULL,
    produit_libelle VARCHAR(255)  NOT NULL,
+   produit_description TEXT,
    produit_prixAchat DECIMAL(15,2)   NOT NULL,
    produit_prixVente DECIMAL(15,2)   NOT NULL,
-   produit_stock INT   NOT NULL,
-   produit_stockAlerte INT   NOT NULL,
+   produit_stock INT NOT NULL,
+   produit_stockAlerte INT NOT NULL,
    produit_photo VARCHAR(255)  NOT NULL,
    sousCategorie_id INT NOT NULL,
    fournisseur_id INT NOT NULL,
    PRIMARY KEY(produit_id),
    FOREIGN KEY(sousCategorie_id) REFERENCES SousCategorie(sousCategorie_id),
    FOREIGN KEY(fournisseur_id) REFERENCES Fournisseur(fournisseur_id)
-);
-
--- TABLE LIGNE_COMMANDE ----------------------------------------------------------------------------------------------
-
-CREATE TABLE Ligne_Commande(
-   ligneCommande_id INT AUTO_INCREMENT,
-   ligneCommande_quantite INT NOT NULL,
-   produit_id INT NOT NULL,
-   commande_id INT NOT NULL,
-   PRIMARY KEY(ligneCommande_id),
-   FOREIGN KEY(produit_id) REFERENCES Produit(produit_id),
-   FOREIGN KEY(commande_id) REFERENCES Commande(commande_id)
 );
 
 -- TABLE PERSONNEL ----------------------------------------------------------------------------------------------
@@ -114,7 +104,6 @@ CREATE TABLE Personnel(
 
 CREATE TABLE Client(
    client_id INT AUTO_INCREMENT,
-   client_reference VARCHAR(255) UNIQUE NOT NULL,
    client_nom VARCHAR(255)  NOT NULL,
    client_prenom VARCHAR(255)  NOT NULL,
    client_dateNaissance DATE NOT NULL,
@@ -139,7 +128,6 @@ CREATE TABLE Client(
 
 CREATE TABLE Livraison(
    livraison_id INT AUTO_INCREMENT,
-   livraison_num VARCHAR(255)  NOT NULL,
    livraison_NbColis INT NOT NULL,
    livraison_dateExpedition DATE NOT NULL,
    livraison_dateLivraison DATETIME NOT NULL,
@@ -151,9 +139,20 @@ CREATE TABLE Livraison(
    FOREIGN KEY(commande_id) REFERENCES Commande(commande_id)
 );
 
--- TABLE CONTIENT ----------------------------------------------------------------------------------------------
+-- TABLE LIGNE_COMMANDE ----------------------------------------------------------------------------------------------
 
-CREATE TABLE Contient(
+CREATE TABLE Ligne_Commande(
+   produit_id INT,
+   commande_id INT,
+   ligneCommande_quantite INT NOT NULL,
+   PRIMARY KEY(produit_id, commande_id),
+   FOREIGN KEY(produit_id) REFERENCES Produit(produit_id),
+   FOREIGN KEY(commande_id) REFERENCES Commande(commande_id)
+);
+
+-- TABLE LIGNE_LIVRAISON ----------------------------------------------------------------------------------------------
+
+CREATE TABLE Ligne_Livraison(
    produit_id INT,
    livraison_id INT,
    quantite_livree VARCHAR(50) ,
@@ -161,4 +160,6 @@ CREATE TABLE Contient(
    FOREIGN KEY(produit_id) REFERENCES Produit(produit_id),
    FOREIGN KEY(livraison_id) REFERENCES Livraison(livraison_id)
 );
+
+
 
