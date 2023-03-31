@@ -1,0 +1,160 @@
+<mxfile host="app.diagrams.net" modified="2023-03-30T08:16:38.386Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="fY7isqy_6N3t9s8QkRse" version="21.1.1" type="device">
+  <diagram name="Page-1" id="RpdcTXqI5rda7WNxvqk9">
+    <mxGraphModel dx="989" dy="553" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="J4O3ksmcwHLV5DfwWfM9-2" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Consulter le catalogue&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;shadow=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="469" y="116" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="J4O3ksmcwHLV5DfwWfM9-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;shadow=1;" parent="1" source="srGaDedWtPXpGM_kZUrb-3" target="J4O3ksmcwHLV5DfwWfM9-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="139" y="246" as="sourcePoint" />
+            <mxPoint x="519" y="436" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J4O3ksmcwHLV5DfwWfM9-4" value="Relation fournisseur" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;sketch=1;curveFitting=1;jiggle=2;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="870" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="J4O3ksmcwHLV5DfwWfM9-12" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Acheter les produits via les fournisseurs&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="760" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="J4O3ksmcwHLV5DfwWfM9-17" value="" style="endArrow=classic;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;shadow=1;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1" target="J4O3ksmcwHLV5DfwWfM9-12" source="J4O3ksmcwHLV5DfwWfM9-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="358" y="890" as="sourcePoint" />
+            <mxPoint x="548" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-3" value="Client Particulier" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="139" y="136" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-6" value="Client Pro" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="31" y="30" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-10" value="" style="endArrow=block;html=1;shadow=1;endFill=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="srGaDedWtPXpGM_kZUrb-6" target="srGaDedWtPXpGM_kZUrb-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="80" as="sourcePoint" />
+            <mxPoint x="400" y="90" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-11" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Passer une commande&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="469" y="300" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;sketch=1;curveFitting=1;jiggle=2;shadow=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="srGaDedWtPXpGM_kZUrb-3" target="srGaDedWtPXpGM_kZUrb-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="179" y="166" as="sourcePoint" />
+            <mxPoint x="410" y="310" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-14" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Modifier un produit du catalogue&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="850" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-15" value="" style="endArrow=classic;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;shadow=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="srGaDedWtPXpGM_kZUrb-14" source="J4O3ksmcwHLV5DfwWfM9-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="910" as="sourcePoint" />
+            <mxPoint x="868" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-16" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Ajouter un produit au catalogue&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="760" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-17" value="" style="endArrow=classic;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;shadow=1;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.681;entryY=0.967;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="srGaDedWtPXpGM_kZUrb-16" source="J4O3ksmcwHLV5DfwWfM9-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="518" y="960" as="sourcePoint" />
+            <mxPoint x="540" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-18" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Supprimer un produit du catalogue&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="940" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-19" value="" style="endArrow=classic;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;shadow=1;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="srGaDedWtPXpGM_kZUrb-18" source="J4O3ksmcwHLV5DfwWfM9-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="980" as="sourcePoint" />
+            <mxPoint x="538" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-20" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Gérer les stocks&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="950" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-21" value="" style="endArrow=classic;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;shadow=1;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="srGaDedWtPXpGM_kZUrb-20" source="J4O3ksmcwHLV5DfwWfM9-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="408" y="960" as="sourcePoint" />
+            <mxPoint x="538" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-22" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Gérer l&#39;arborescence Rubrique / Sous-rubrique&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="850" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-23" value="" style="endArrow=classic;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;shadow=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="srGaDedWtPXpGM_kZUrb-22" source="J4O3ksmcwHLV5DfwWfM9-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="830" as="sourcePoint" />
+            <mxPoint x="538" y="1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-24" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Créer un compte&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;shadow=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="468" y="20" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;shadow=1;" edge="1" parent="1" target="srGaDedWtPXpGM_kZUrb-24" source="srGaDedWtPXpGM_kZUrb-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="168" y="60" as="sourcePoint" />
+            <mxPoint x="518" y="340" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-26" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Consulter l&#39;état des usagers&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="460" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-27" value="" style="endArrow=classic;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;shadow=1;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="srGaDedWtPXpGM_kZUrb-26" source="srGaDedWtPXpGM_kZUrb-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="620" as="sourcePoint" />
+            <mxPoint x="310" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-28" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Appliquer une réduction supplémentaire aux clients pro&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="640" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-29" value="" style="endArrow=classic;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;shadow=1;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="srGaDedWtPXpGM_kZUrb-28" source="srGaDedWtPXpGM_kZUrb-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="467" y="680" as="sourcePoint" />
+            <mxPoint x="677" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-30" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Ajouter / Supprimer un produit dans le panier&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="468" y="208" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;sketch=1;curveFitting=1;jiggle=2;shadow=1;entryX=0.1;entryY=0.143;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="srGaDedWtPXpGM_kZUrb-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="168" y="156" as="sourcePoint" />
+            <mxPoint x="409" y="210" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-32" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Consulter l&#39;historique des commandes&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="469" y="390" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;sketch=1;curveFitting=1;jiggle=2;shadow=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="srGaDedWtPXpGM_kZUrb-32" source="srGaDedWtPXpGM_kZUrb-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="169" y="260" as="sourcePoint" />
+            <mxPoint x="410" y="414" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-35" value="Service commercial" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;sketch=1;curveFitting=1;jiggle=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="428" y="570" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-36" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Ajuster les coef. client&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="550" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="srGaDedWtPXpGM_kZUrb-37" value="" style="endArrow=classic;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;shadow=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="srGaDedWtPXpGM_kZUrb-36" source="srGaDedWtPXpGM_kZUrb-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="438" y="640" as="sourcePoint" />
+            <mxPoint x="320" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
